@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import videoBg from "../../../assets/video/home.mp4";
 import "../../../assets/fonts/dmsans.css";
+import star from "@/assets/images/about-images.jpg";
 
 const VideoParallax = () => {
   const [offsetY, setOffsetY] = useState(0);
@@ -15,11 +16,12 @@ const VideoParallax = () => {
     <div className="relative sm:mt-16 md:mt-20 w-full h-[900px] md:h-[700px] overflow-hidden flex items-center justify-center">
       <video
         className="absolute top-0 left-0 w-full h-[900px] md:h-[700px] object-cover"
-        src="https://res.cloudinary.com/dqllp6thp/video/upload/v1740067117/fjfeokajbqefxiwjafcw.webm"
+        src="https://res.cloudinary.com/dqllp6thp/video/upload/v1740070940/j4ms4h6f7twuvbrynsal.webm"
         autoPlay
         loop
         muted
         playsInline
+        poster={star}
         style={{ transform: `translateY(${offsetY}px)` }}
       />
 
